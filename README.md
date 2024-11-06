@@ -22,6 +22,8 @@ Celem projektu jest zbudowanie modelu uczenia maszynowego, który na podstawie z
 
 ### 4. Zbiór danych
 
+Dane: https://www.kaggle.com/datasets/sumansharmadataworld/depression-surveydataset-for-analysis/data
+
 Zbiór danych zawiera 2556 rekordów i 19 kolumn, w tym zarówno dane liczbowe, jak i kategoryczne. Wykorzystane dane demograficzne oraz informacje o stylu życia umożliwiają zbudowanie modelu przewidującego ryzyko myśli samobójczych. Kluczowe kolumny używane w projekcie to:
 - **Have you ever had suicidal thoughts?** (zmienna docelowa),
 - **Financial Stress**,
