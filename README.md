@@ -50,8 +50,8 @@ Dzięki temu modelowi chcemy dostarczyć wartościowe wnioski na temat kluczowyc
 - **Repozytorium**: GitHub
 - **Platforma do dokumentacji i współpracy**: GitHub Project, README.md
 
-##Opis Modelu
-###Model
+## Opis Modelu
+### Model
 W projekcie użyto następujących modeli uczenia maszynowego:
 - Logistic Regression
 - Random Forest Classifier
@@ -67,12 +67,12 @@ Uzasadnienie:
   - Accuracy najlepszego modelu: 59.58%
   - Najlepszy model: Logistic Regression z parametrem C=0.1
 
-##Instrukcja
-###Pobranie aplikacji
+## Instrukcja
+### Pobranie aplikacji
 Projekt jest dostępny w repozytorium GitHub. Aby go pobrać, wykonaj następujące kroki:
 1. Otwórz terminal.
 2. Sklonuj repozytorium
-###Uruchamianie aplikacji
+### Uruchamianie aplikacji
 Wymagania:
 Docker i Docker Compose: Używane do uruchamiania środowiska Airflow.
 Python 3.8+: Do instalacji lokalnych zależności.
@@ -82,8 +82,7 @@ Plik uwierzytelniający Google API: airflow-442316-8c5dfa0cf9c0.json.
 2. Zaloguj się do panelu Airflow pod adresem http://localhost:8080
 3. Włącz odpowiednie DAG-i w interfejsie Airflow.
 
-###Użycie
-Użycie
+### Użycie
 DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory treningowe i testowe.
 DAG 3_download-cloud_clean_standard-normalisate_save.py: Pobiera dane z chmury, czyści je i przetwarza.
 DAG 4_building_model.py: Trenuje model ML i zapisuje wyniki.
