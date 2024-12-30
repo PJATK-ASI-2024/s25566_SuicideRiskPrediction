@@ -74,16 +74,16 @@ Projekt jest dostępny w repozytorium GitHub. Aby go pobrać, wykonaj następuj�
 2. Sklonuj repozytorium
 ### Uruchamianie aplikacji
 Wymagania:
-Docker i Docker Compose: Używane do uruchamiania środowiska Airflow.
-Python 3.8+: Do instalacji lokalnych zależności.
-Plik uwierzytelniający Google API: airflow-442316-8c5dfa0cf9c0.json.
+- Docker i Docker Compose
+- Python 3.8+
+- Plik uwierzytelniający Google API: airflow-442316-8c5dfa0cf9c0.json.
 
 1. Zbudowanie kontenera: docker-compose up --build
 2. Zaloguj się do panelu Airflow pod adresem http://localhost:8080
 3. Włącz odpowiednie DAG-i w interfejsie Airflow.
 
 ### Użycie
-DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory treningowe i testowe.
-DAG 3_download-cloud_clean_standard-normalisate_save.py: Pobiera dane z chmury, czyści je i przetwarza.
-DAG 4_building_model.py: Trenuje model ML i zapisuje wyniki.
-DAG 5_monitoring.py: Monitoruje jakość modelu i wysyła powiadomienia e-mail w razie problemów.
+- DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory treningowe i testowe.
+- DAG 3_download-cloud_clean_standard-normalisate_save.py: Pobiera dane z chmury, czyści je i przetwarza.
+- DAG 4_building_model.py: Trenuje model ML i zapisuje wyniki.
+- DAG 5_monitoring.py: Monitoruje jakość modelu i wysyła powiadomienia e-mail w razie problemów.
