@@ -46,7 +46,20 @@ Dzięki temu modelowi chcemy dostarczyć wartościowe wnioski na temat kluczowyc
 ### 7. Technologia i narzędzia
 
 - **Język programowania**: Python
-- **Biblioteki**: Pandas, NumPy, Scikit-Learn, Matplotlib
+- **Biblioteki**: apache-airflow==2.5.1
+pandas~=1.5.3
+scikit-learn~=1.2.2
+gspread~=6.1.4
+google-auth
+oauth2client
+sqlalchemy>=1.4
+seaborn~=0.13.2
+matplotlib~=3.4
+fastapi~=0.115.6
+uvicorn
+flask-session==0.4.0
+pydantic~=2.10.4
+pendulum~=2.1.2
 - **Repozytorium**: GitHub
 - **Platforma do dokumentacji i współpracy**: GitHub Project, README.md
 
