@@ -49,3 +49,42 @@ Dzięki temu modelowi chcemy dostarczyć wartościowe wnioski na temat kluczowyc
 - **Biblioteki**: Pandas, NumPy, Scikit-Learn, Matplotlib
 - **Repozytorium**: GitHub
 - **Platforma do dokumentacji i współpracy**: GitHub Project, README.md
+
+##Opis Modelu
+###Model
+W projekcie użyto następujących modeli uczenia maszynowego:
+- Logistic Regression
+- Random Forest Classifier
+- Support Vector Classifier (SVC)
+
+Modele zostały wybrane ze względu na ich różnorodność i zdolność do pracy z danymi o różnych strukturach. Najlepszy model został wybrany za pomocą GridSearchCV, który optymalizuje hiperparametry na podstawie walidacji krzyżowej.
+Uzasadnienie:
+- Logistic Regression: Działa dobrze dla danych liniowo separowalnych i jest interpretowalny.
+- Random Forest: Odporny na przeuczenie, dobrze radzi sobie z danymi o wielu wymiarach.
+- SVC: Skuteczny w separowaniu danych w nieliniowych przestrzeniach.
+
+  Wyniki
+  - Accuracy najlepszego modelu: 59.58%
+  - Najlepszy model: Logistic Regression z parametrem C=0.1
+
+##Instrukcja
+###Pobranie aplikacji
+Projekt jest dostępny w repozytorium GitHub. Aby go pobrać, wykonaj następujące kroki:
+1. Otwórz terminal.
+2. Sklonuj repozytorium
+###Uruchamianie aplikacji
+Wymagania:
+Docker i Docker Compose: Używane do uruchamiania środowiska Airflow.
+Python 3.8+: Do instalacji lokalnych zależności.
+Plik uwierzytelniający Google API: airflow-442316-8c5dfa0cf9c0.json.
+
+1. Zbudowanie kontenera: docker-compose up --build
+2. Zaloguj się do panelu Airflow pod adresem http://localhost:8080
+3. Włącz odpowiednie DAG-i w interfejsie Airflow.
+
+###Użycie
+Użycie
+DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory treningowe i testowe.
+DAG 3_download-cloud_clean_standard-normalisate_save.py: Pobiera dane z chmury, czyści je i przetwarza.
+DAG 4_building_model.py: Trenuje model ML i zapisuje wyniki.
+DAG 5_monitoring.py: Monitoruje jakość modelu i wysyła powiadomienia e-mail w razie problemów.
