@@ -8,11 +8,7 @@ app = FastAPI()
 
 # Definicja modelu danych wejściowych
 class PredictionRequest(BaseModel):
-    feature1: float
-    feature2: float
-    feature3: float
-    # Dodaj więcej funkcji zgodnie z wymaganiami modelu
-
+    # Dtutaj zrobic jeszcze
 # Ścieżka do zapisanego modelu
 MODEL_PATH = "/opt/airflow/models/best_model.pkl"
 
